@@ -150,6 +150,24 @@
                                     <action selector="datePickerChanged:" destination="9zb-Qb-z8U" eventType="valueChanged" id="IrM-0s-ZKm"/>
                                 </connections>
                             </datePicker>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IEn-Cg-Rpb">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Edit To-Do Item" id="Doe-mk-YQR">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="DB1-25-gO7">
+                                            <connections>
+                                                <segue destination="Yd2-Nf-51w" kind="unwind" identifier="cancelUpdateSegue" unwindAction="cancelUpdateWithSegue:" id="Ov9-Ay-WT6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Update" id="3KN-zT-Qem">
+                                            <connections>
+                                                <segue destination="Yd2-Nf-51w" kind="unwind" identifier="updateSegue" unwindAction="updateWithSegue:" id="JFj-Gb-XTT"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mof-6O-h1q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -162,6 +180,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABl-mg-LDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Yd2-Nf-51w" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2057" y="74"/>
         </scene>

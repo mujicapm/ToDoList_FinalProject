@@ -7,7 +7,19 @@
 
 import Foundation
 
-var todos: [ToDo] = []
+var todos: [ToDo] = [
+    ToDo(name: "Task 1",
+         description: "Example of a great description",
+         priority: .p2,
+         dueDate: "Mar 27, 2022"),
+    ToDo(name: "Task 2",
+         description: "Example of the best description",
+         priority: .p1,
+         dueDate: "May 22, 2022"),
+    ToDo(name: "Task 3",
+         description: "Pretty terrible example of a description",
+         priority: .p4,
+         dueDate: "Dec 07, 2023")]
 
 class ToDo {
     

@@ -40,5 +40,18 @@ class DetailViewController: UIViewController {
         }
     }
 
+    @IBAction func cancelUpdate(segue:UIStoryboardSegue) {
+      
+    }
+    
+    @IBAction func update(segue:UIStoryboardSegue) {
+        let toDoEditVC = segue.source as! EditToDoViewController
+        rowNumber = toDoEditVC.rowNumber
+        toDoNameLabel.text = toDoEditVC.todo?.name
+        toDoDescriptionLabel.text = toDoEditVC.todo?.description
+        toDoDueDate.text = toDoEditVC.dueDate
+        toDoPriority.text = toDoEditVC.todo?.priority.rawValue
+        
+    }
 }
 

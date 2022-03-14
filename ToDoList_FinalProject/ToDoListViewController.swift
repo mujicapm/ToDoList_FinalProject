@@ -95,7 +95,7 @@ class ToDoListViewController: UITableViewController {
     }
     
     @IBAction func cancel(segue:UIStoryboardSegue) {
-      
+    
     }
     
     @IBAction func done(segue:UIStoryboardSegue) {
@@ -103,6 +103,10 @@ class ToDoListViewController: UITableViewController {
         todos.append(ToDo(name: toDoDetailVC.name, description: toDoDetailVC.tmpdescription, priority: toDoDetailVC.priority , dueDate: toDoDetailVC.dueDate))
         tableView.reloadData()
          
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
 
 
