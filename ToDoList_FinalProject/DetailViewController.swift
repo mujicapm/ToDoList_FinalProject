@@ -8,6 +8,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
     @IBOutlet weak var toDoNameLabel: UILabel!
     @IBOutlet weak var toDoDescriptionLabel: UILabel!
     var todo: ToDo?

@@ -17,7 +17,6 @@ class ToDoListViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(ToDoListViewController.didTapAddItemButton(_:)))
     }
 
     // MARK: - Table view data source
@@ -93,55 +92,16 @@ class ToDoListViewController: UITableViewController {
         detailViewController.todo = todos[indexPath.row]
     }
     
-    func didTapAddItemButton(_ sender: UIBarButtonItem)
-        {
-            // Create an alert
-            let alert = UIAlertController(
-                title: "Create new to-do",
-                message: "Please fill out the to-do name; all other fields are optional:",
-                preferredStyle: .alert)
+    @IBAction func cancel(segue:UIStoryboardSegue) {
+      
+    }
+    
+    @IBAction func done(segue:UIStoryboardSegue) {
+        let toDoDetailVC = segue.source as! CreateToDoViewController
+        todos.append(ToDo(name: toDoDetailVC.name, description: toDoDetailVC.tmpdescription, priority: toDoDetailVC.priority , dueDate: toDoDetailVC.dueDate))
+        tableView.reloadData()
+         
+    }
 
-            // Add a text field to the alert for the new item's title
-            alert.addTextField { field in
-                field.placeholder = "Name"
-                field.returnKeyType = .next}
-            
-            alert.addTextField { field in
-                field.placeholder = "Description"
-                field.returnKeyType = .next}
-            
-
-            // Add a "cancel" button to the alert. This one doesn't need a handler
-            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-
-            // Add a "OK" button to the alert. The handler calls addNewToDoItem()
-            alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in
-                if let name = alert.textFields?[0].text
-                {
-                    if let description = alert.textFields?[1].text {
-                        self.addNewToDoItem(name: name, description: description)
-                    } else {
-                        let description = ""
-                        self.addNewToDoItem(name: name, description: description)
-                    }
-                    
-                }
-            }))
-
-            // Present the alert to the user
-            self.present(alert, animated: true, completion: nil)
-        }
-
-    private func addNewToDoItem(name: String, description: String)
-        {
-            // The index of the new item will be the current item count
-            let newIndex = todos.count
-
-            // Create new item and add it to the todo items list
-            todos.append(ToDo(name: name, description: description, priority: .p4, dueDate: Date()))
-
-            // Tell the table view a new row has been created
-            tableView.insertRows(at: [IndexPath(row: newIndex, section: 0)], with: .top)
-        }
 
 }
