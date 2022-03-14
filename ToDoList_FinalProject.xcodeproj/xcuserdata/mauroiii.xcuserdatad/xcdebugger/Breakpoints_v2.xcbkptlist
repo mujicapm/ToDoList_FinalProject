@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "67E0F76E-3C7E-4080-AB5F-266CAD2A82F1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39151F6F-6270-40EA-9C88-B8521473F79E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDoList_FinalProject/CreateToDoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "CreateToDoViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "39151F6F-6270-40EA-9C88-B8521473F79E - 7205118ce14ab849"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDoList_FinalProject.CreateToDoViewController.name.getter : Swift.String"
+                  moduleName = "ToDoList_FinalProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/LaCie/Apps/Xcode/ToDoList_FinalProject/ToDoList_FinalProject/CreateToDoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "103">
+               </Location>
+               <Location
+                  uuid = "39151F6F-6270-40EA-9C88-B8521473F79E - 48e37bf3603b05d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDoList_FinalProject.CreateToDoViewController.name.setter : Swift.String"
+                  moduleName = "ToDoList_FinalProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/LaCie/Apps/Xcode/ToDoList_FinalProject/ToDoList_FinalProject/CreateToDoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "39151F6F-6270-40EA-9C88-B8521473F79E - fea76394c53269f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDoList_FinalProject.CreateToDoViewController.name.modify : Swift.String"
+                  moduleName = "ToDoList_FinalProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/LaCie/Apps/Xcode/ToDoList_FinalProject/ToDoList_FinalProject/CreateToDoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "39151F6F-6270-40EA-9C88-B8521473F79E - 332c784c0921d162"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDoList_FinalProject.CreateToDoViewController.name.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ToDoList_FinalProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/LaCie/Apps/Xcode/ToDoList_FinalProject/ToDoList_FinalProject/CreateToDoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "39151F6F-6270-40EA-9C88-B8521473F79E - 5a858980f5e4ac11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDoList_FinalProject.CreateToDoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ToDoList_FinalProject.CreateToDoViewController"
+                  moduleName = "ToDoList_FinalProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/LaCie/Apps/Xcode/ToDoList_FinalProject/ToDoList_FinalProject/CreateToDoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "179">
+               </Location>
+               <Location
+                  uuid = "39151F6F-6270-40EA-9C88-B8521473F79E - e73e6c1c0e3c5f3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDoList_FinalProject.CreateToDoViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ToDoList_FinalProject.CreateToDoViewController&gt;"
+                  moduleName = "ToDoList_FinalProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/LaCie/Apps/Xcode/ToDoList_FinalProject/ToDoList_FinalProject/CreateToDoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3909F0BE-F79C-4E65-8133-C7608D3921B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDoList_FinalProject/CreateToDoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1434B041-A121-4D53-9DC2-E1D20C145871"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDoList_FinalProject/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D603E10-1827-456E-BFF5-A22B837546C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDoList_FinalProject/CreateToDoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "validationHelper()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -155,19 +155,19 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfA-lt-rgX">
-                                <rect key="frame" x="39" y="370" width="55" height="21"/>
+                                <rect key="frame" x="39" y="370" width="54.333333333333343" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW7-Gp-BOh">
-                                <rect key="frame" x="39" y="471" width="71" height="21"/>
+                                <rect key="frame" x="39" y="471.66666666666669" width="71" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ne2-B0-3mf">
-                                <rect key="frame" x="39" y="399" width="335" height="32"/>
+                                <rect key="frame" x="39" y="398.33333333333331" width="335" height="33.333333333333314"/>
                                 <segments>
                                     <segment title="P1: Urg/Imp"/>
                                     <segment title="P2: Urgent"/>
@@ -448,19 +448,19 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLj-hN-5xm">
-                                <rect key="frame" x="39" y="360" width="55" height="21"/>
+                                <rect key="frame" x="39" y="360" width="54.333333333333343" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipz-mx-nZe">
-                                <rect key="frame" x="39" y="461" width="71" height="21"/>
+                                <rect key="frame" x="39" y="461.66666666666669" width="71" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="CV0-2H-hv2">
-                                <rect key="frame" x="39" y="389" width="335" height="32"/>
+                                <rect key="frame" x="39" y="388.33333333333331" width="335" height="33.333333333333314"/>
                                 <segments>
                                     <segment title="P1: Urg/Imp"/>
                                     <segment title="P2: Urgent"/>
