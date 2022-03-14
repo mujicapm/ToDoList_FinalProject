@@ -91,6 +91,7 @@ class ToDoListViewController: UITableViewController {
         guard let indexPath =
                 self.tableView.indexPath(for: cell) else { return }
         detailViewController.todo = todos[indexPath.row]
+        detailViewController.rowNumber = indexPath.row
     }
     
     @IBAction func cancel(segue:UIStoryboardSegue) {

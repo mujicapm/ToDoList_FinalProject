@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var toDoDueDate: UILabel!
     var todo: ToDo?
     @IBOutlet weak var toDoPriority: UILabel!
+    var rowNumber: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,14 @@ class DetailViewController: UIViewController {
             toDoDueDate.text = t.dueDate
             toDoPriority.text = t.priority.rawValue
             
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "editToDo") {
+            guard let editToDoViewController = segue.destination as? EditToDoViewController else { return }
+            editToDoViewController.todo = todo
+            editToDoViewController.rowNumber = rowNumber
         }
     }
 
