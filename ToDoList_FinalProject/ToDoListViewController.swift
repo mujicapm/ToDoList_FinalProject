@@ -17,6 +17,7 @@ class ToDoListViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(ToDoListViewController.didTapAddItemButton(_:)))
     }
 
     // MARK: - Table view data source
@@ -28,18 +29,20 @@ class ToDoListViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return to
+        return todos.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let todo = todos[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: todo.priority.rawValue, for: indexPath)
 
         // Configure the cell...
 
+        cell.textLabel?.text = todo.name
+        cell.detailTextLabel?.text = todo.description
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -76,14 +79,69 @@ class ToDoListViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        guard let detailViewController = segue.destination as? DetailViewController else { return }
+        guard let cell = sender as? UITableViewCell else { return }
+        guard let indexPath =
+                self.tableView.indexPath(for: cell) else { return }
+        detailViewController.todo = todos[indexPath.row]
     }
-    */
+    
+    func didTapAddItemButton(_ sender: UIBarButtonItem)
+        {
+            // Create an alert
+            let alert = UIAlertController(
+                title: "Create new to-do",
+                message: "Please fill out the to-do name; all other fields are optional:",
+                preferredStyle: .alert)
+
+            // Add a text field to the alert for the new item's title
+            alert.addTextField { field in
+                field.placeholder = "Name"
+                field.returnKeyType = .next}
+            
+            alert.addTextField { field in
+                field.placeholder = "Description"
+                field.returnKeyType = .next}
+            
+
+            // Add a "cancel" button to the alert. This one doesn't need a handler
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+            // Add a "OK" button to the alert. The handler calls addNewToDoItem()
+            alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in
+                if let name = alert.textFields?[0].text
+                {
+                    if let description = alert.textFields?[1].text {
+                        self.addNewToDoItem(name: name, description: description)
+                    } else {
+                        let description = ""
+                        self.addNewToDoItem(name: name, description: description)
+                    }
+                    
+                }
+            }))
+
+            // Present the alert to the user
+            self.present(alert, animated: true, completion: nil)
+        }
+
+    private func addNewToDoItem(name: String, description: String)
+        {
+            // The index of the new item will be the current item count
+            let newIndex = todos.count
+
+            // Create new item and add it to the todo items list
+            todos.append(ToDo(name: name, description: description, priority: .p4, dueDate: Date()))
+
+            // Tell the table view a new row has been created
+            tableView.insertRows(at: [IndexPath(row: newIndex, section: 0)], with: .top)
+        }
 
 }

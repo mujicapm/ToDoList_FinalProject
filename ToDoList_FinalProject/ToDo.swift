@@ -14,7 +14,7 @@ class ToDo {
     enum `Priority`: String {
         case p1 = "urgent / important"
         case p2 = "urgent / not important"
-        case p3 = "important / not urgent "
+        case p3 = "important / not urgent"
         case p4 = "not urgent / not important"
     }
     
