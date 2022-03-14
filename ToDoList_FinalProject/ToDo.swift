@@ -21,9 +21,9 @@ class ToDo {
     var name: String
     var description: String
     var priority: Priority
-    var dueDate: Date
+    var dueDate: String
     
-    init(name: String, description: String, priority: Priority, dueDate: Date) {
+    init(name: String, description: String, priority: Priority, dueDate: String) {
         self.name = name
         self.description = description
         self.priority = priority

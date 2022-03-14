@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import Foundation
 
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var toDoNameLabel: UILabel!
     @IBOutlet weak var toDoDescriptionLabel: UILabel!
+    @IBOutlet weak var toDoDueDate: UILabel!
     var todo: ToDo?
+    @IBOutlet weak var toDoPriority: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +25,11 @@ class DetailViewController: UIViewController {
         if let t = todo {
             toDoNameLabel.text = t.name
             toDoDescriptionLabel.text = t.description
+            toDoDueDate.text = t.dueDate
+            toDoPriority.text = t.priority.rawValue
+            
         }
     }
-
 
 }
 
